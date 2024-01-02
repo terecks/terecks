@@ -1,0 +1,174 @@
+body{
+	background: url("background.jpg");
+	max-height: 1920px;
+	heightL: 100%;
+}
+
+img {
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 10px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 95%;
+}
+block{
+   width: 120px;
+   height: 120px;
+}
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
+.container{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	flex-wrap: wrap;
+	margin: 20px auto;
+    top:600px;
+	 
+}
+.card {
+ width: 300px;
+ height: 450px;
+ margin: 0 auto;
+ position: relative; 
+ border: 1px solid #f5dde1;
+}
+.card_image{
+	height: 120px;
+	width: 100%;
+	max-width: 180px;
+	background-color: #a2a2a2;
+	margin: auto;
+}
+.card_description{
+	margin-top: 15px;
+	text-align: center;
+}
+.link {
+ text-decoration: none;
+ display: inline-block;
+ font-size: 2rem;
+ background-color: #1e88e5;
+ border-radius: 5px;
+ color: #ffffff;
+ padding: 15px 25px;
+ transition: all 0.8s ease 0s;
+}
+.link:hover {
+ background-color: #e53935;
+}
+#callback {
+ width: 300px;
+ height: 150px;
+ background-color: grey;
+ position: absolute;
+ bottom: 30px;
+ transform: translateX(-100%);
+}
+#callback p {
+ color: #fff;
+ padding: 22px;
+}
+#callback:hover {
+ transform: translateX(0%);
+ transition: all 0.7s ease;
+}
+#callback:after {
+ content: 'Обратная связь';
+ background-color: pink;
+ text-align: center;
+ border-radius: 0 0 8px 8px;
+ padding: 5px 0;
+ width: 150px;
+ position: absolute; 
+ left: 300px;
+ transform: rotate(-90deg);
+ transform-origin: 0 0;
+}
+.product,
+.description {
+ width: 100%; 
+ height: 100%;
+ position: absolute; 
+ left: 0; 
+ top: 0;
+ bottom: 600px;
+ text-align: center;
+ background-color: #fff;
+ backface-visibility: hidden;
+ transition: 1s;
+}
+.description a {
+ display: inline-block;
+ padding: 10px 30px;
+ margin-top: 30px;
+ text-decoration: none;
+ text-transform: uppercase;
+ color: #fff;
+ background-color: #f5dde1;
+top: 60px;
+}
+.description {
+ box-sizing: border-box;
+ padding: 40px;
+ transform: rotateY(180deg); 
+
+}
+.card:hover .product {
+ transform: rotateY(180deg); 
+}
+.card:hover .description {
+ transform: rotateY(360deg);
+}
+h1 {
+ font-size:64px;
+ width: 30vw;
+ color: #fff;
+ animation: myAnim 3s linear alternate infinite;
+}
+@keyframes myAnim {
+ from {
+   margin-left: 300px;
+ }
+ to {
+   margin-left: 900px;
+ }
+}
+.menni{
+	margin-top:10px;
+	width: 1527px;
+    height: 80px;
+	margin-left:200px;
+	border-radius: 50px;
+    background: #B59279;
+	background-position: center;
+    top: 600px;
+}
+
+.logo{
+	margin-left: 0px; 
+	height: 129px;
+	height: 121px;
+	margin-top: 10px;
+}
+
+.qwe{
+	color: #fff;
+	font-size:64px;
+	margin-top: 10px;
+}
+
+.conc{
+	
+}
